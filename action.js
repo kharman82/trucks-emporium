@@ -1,5 +1,8 @@
-alert("Go Away!");
+function hi() {
+alert("Welcome to Ken and Joes Trucks Emporium!");
+}
 
+function age() {
 var age = prompt('What is your age?') 
 var greeting; 
 
@@ -10,8 +13,11 @@ if (age >= 18) {
 } else {
     greeting = 'please enter an age';
 }
-document.write( '<h1>' + greeting + '</h1>' );
+return greeting;
+}
 
+
+function typez() {
 var typez = prompt('Can you drive a manual truck?')
 var response;
 
@@ -22,13 +28,16 @@ if (typez == 'y') {
 }  else {
     response = 'Enter a Respnse NOW!';
 }
-document.write( '<h2>' + response + '</h2>' );
+return response;
+}
 
+function txt() {
 var txt;
-var c = confirm("Answer!");
+var c = confirm("Answer!")
   if (c == true) {
         txt = "Thank God";
 } else {
         txt = "Press Something!";
 }
-document.write( txt );
+return txt;
+}
