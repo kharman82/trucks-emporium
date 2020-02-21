@@ -2,23 +2,28 @@ function hi() {
 alert("Welcome to Ken and Joes Trucks Emporium!");
 }
 
-function age() {
-var age = prompt('What is your age?') 
+function purchase() {
+var truck = prompt('How many truck do you want to buy?') 
 var greeting; 
 
-if (age >= 18) {
-    greeting = 'Great! Age Verrified!';
-} else if (age < 18) {
+if (truck >= 5) {
+    greeting = 'Great! They are yours!';
+} else if (truck < 18) {
     greeting = 'Sorry, can \'t sell you a truck!';
 } else {
-    greeting = 'please enter an age';
+    greeting = 'Please enter an amount.';
 }
+for (var i = 0; i < truck; i = i + 1){ document.write('yeah!')};
 return greeting;
 }
 
 
-function typez() {
-var typez = prompt('Can you drive a manual truck?')
+
+function truckType() {
+var typez = prompt('Can you drive a manual truck?');
+while (typez !== 'y' && typez !== 'n') {
+    typez = prompt('Please enter "y" or "n" DO NOT SPELL IT OUT!');
+}
 var response;
 
 if (typez == 'y') {
